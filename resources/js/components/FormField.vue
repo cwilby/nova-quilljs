@@ -6,15 +6,18 @@
     :show-help-text="showHelpText"
   >
     <template slot="field">
-      <quill-editor
-        :style="css"
-        v-model="value"
-        ref="myQuillEditor"
-        :options="editorOption"
-        @blur="onEditorBlur($event)"
-        @focus="onEditorFocus($event)"
-        @ready="onEditorReady($event)"
-      ></quill-editor>
+      <div>
+        <quill-editor
+          :style="css"
+          v-model="value"
+          ref="myQuillEditor"
+          :options="editorOption"
+          @blur="onEditorBlur($event)"
+          @focus="onEditorFocus($event)"
+          @ready="onEditorReady($event)"
+        ></quill-editor>
+        foo bar
+      </div>
     </template>
   </default-field>
 </template>
