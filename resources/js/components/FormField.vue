@@ -3,6 +3,7 @@
     :field="field"
     :errors="errors"
     :full-width-content="field.width"
+    :show-help-text="showHelpText"
   >
     <template slot="field">
       <quill-editor
